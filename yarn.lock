@@ -37,6 +37,14 @@ mobx-react-lite@^1.4.2:
   resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-1.5.2.tgz#c4395b0568b9cb16f07669d8869cc4efa1b8656d"
   integrity sha512-PyZmARqqWtpuQaAoHF5pKX7h6TKNLwq6vtovm4zZvG6sEbMRHHSqioGXSeQbpRmG8Kw8uln3q/W1yMO5IfL5Sg==
 
+mobx-react-typed-injection@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/mobx-react-typed-injection/-/mobx-react-typed-injection-0.1.1.tgz#63b6170f65f733557b0d62d642a296ffe09813d3"
+  integrity sha512-Ix0/qCcTt//oTPueItxFqyVv6mQVbjxP0+wobbb1Vdq8WJo/sWrQf5NTB+OlWfJg3uyFY7cOV6p9qh03dOqXlw==
+  dependencies:
+    "@types/react" "^16.9.19"
+    ts-essentials "^6.0.0"
+
 mobx-react@^6.1.7:
   version "6.1.7"
   resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-6.1.7.tgz#2fe620851ef33df38e50645101321830a07fc4e2"
