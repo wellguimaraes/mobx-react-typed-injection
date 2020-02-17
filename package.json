@@ -1,11 +1,11 @@
 {
   "name": "mobx-react-typed-injection",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A better, strongly typed stores injector to use with Mobx and React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "pub": "tsc && yarn public",
+    "pub": "tsc && yarn publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,15 +19,15 @@
   },
   "homepage": "https://github.com/wellguimaraes/mobx-react-typed-injection#readme",
   "devDependencies": {
+    "mobx": "^5.15.4",
     "mobx-react": "^6.1.7",
     "react": "^16.12.0",
-    "typescript": "^3.7.5",
-    "mobx": "^5.15.4"
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
+    "mobx": "^5.15.4",
     "mobx-react": "^6.1.7",
-    "react": "^16.12.0",
-    "mobx": "^5.15.4"
+    "react": "^16.12.0"
   },
   "dependencies": {
     "@types/react": "^16.9.19",
