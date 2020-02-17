@@ -5,8 +5,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prepublish": "yarn build",
+    "pub": "tsc && yarn public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,11 +21,13 @@
   "devDependencies": {
     "mobx-react": "^6.1.7",
     "react": "^16.12.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.7.5",
+    "mobx": "^5.15.4"
   },
   "peerDependencies": {
     "mobx-react": "^6.1.7",
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "mobx": "^5.15.4"
   },
   "dependencies": {
     "@types/react": "^16.9.19",

@@ -1,6 +1,17 @@
+import { IComputedValue } from 'mobx'
 import { observer } from 'mobx-react'
 import * as React from 'react'
 import { DeepPartial } from 'ts-essentials'
+
+type IFunction<T = any> = (...args: any[]) => T
+
+export type CleanReturnType<
+  FunctionOrComputed extends IFunction | IComputedValue<any>
+  > = FunctionOrComputed extends IComputedValue<Promise<infer ComputedType>>
+  ? ComputedType
+  : FunctionOrComputed extends IFunction<Promise<infer FunctionReturnType>>
+    ? FunctionReturnType
+    : any
 
 export function createStateManager<S>(stores: S) {
   const StoresContext = React.createContext<S>(null as any)
@@ -28,3 +39,4 @@ export function createStateManager<S>(stores: S) {
     ),
   }
 }
+

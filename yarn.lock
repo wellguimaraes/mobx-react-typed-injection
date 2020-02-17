@@ -52,6 +52,11 @@ mobx-react@^6.1.7:
   dependencies:
     mobx-react-lite "^1.4.2"
 
+mobx@^5.15.4:
+  version "5.15.4"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-5.15.4.tgz#9da1a84e97ba624622f4e55a0bf3300fb931c2ab"
+  integrity sha512-xRFJxSU2Im3nrGCdjSuOTFmxVDGeqOHL+TyADCGbT0k4HHqGmx5u2yaHNryvoORpI4DfbzjJ5jPmuv+d7sioFw==
+
 object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
