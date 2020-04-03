@@ -1,11 +1,11 @@
 {
   "name": "mobx-react-typed-injection",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A better, strongly typed stores injector to use with Mobx and React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "pub": "tsc && yarn publish",
+    "prepublishOnly": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
