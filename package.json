@@ -31,7 +31,6 @@
   },
   "dependencies": {
     "@types/react": "^16.9.19",
-    "mobx-react-typed-injection": "^0.1.1",
     "ts-essentials": "^6.0.0"
   }
 }
