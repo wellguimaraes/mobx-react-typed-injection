@@ -6,21 +6,21 @@ type InjectedComponent<TProps, TInjection extends Partial<TProps>> = React.FC<
   Pick<TProps, Exclude<keyof TProps, keyof TInjection>>
 >
 
-export function createStateManager<TStore>(stores: TStore) {
-  const StoresContext = React.createContext<TStore>(null as any)
+export function createStateManager<TStores>(stores: TStores) {
+  const StoresContext = React.createContext<TStores>(null as any)
   StoresContext.displayName = 'StoresContext'
 
-  const StoresProvider: any = <SP extends any = TStore>({
+  const StoresProvider: any = ({
     stores: _stores = stores as any,
     children,
   }: {
-    stores?: DeepPartial<SP>
+    stores?: DeepPartial<TStores>
     children: React.ReactNode
   }) => <StoresContext.Provider value={_stores as any}>{children}</StoresContext.Provider>
 
   return {
     inject: <TProps, TInjection extends Partial<TProps>>(
-      injector: (stores: TStore) => TInjection,
+      injector: (stores: TStores) => TInjection,
       WrappedComponent: React.ComponentType<TProps>
     ): InjectedComponent<TProps, TInjection> => {
       const _InjectedComponent: React.FunctionComponent = props => {
@@ -33,7 +33,7 @@ export function createStateManager<TStore>(stores: TStore) {
 
       return observer(_InjectedComponent)
     },
-    withFakeStores: (stores: DeepPartial<TStore>) => (children: React.ReactNode) => (
+    withFakeStores: (stores: DeepPartial<TStores>) => (children: React.ReactNode) => (
       <StoresProvider stores={stores}>{children}</StoresProvider>
     ),
   }
