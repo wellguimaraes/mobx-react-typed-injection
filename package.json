@@ -1,6 +1,6 @@
 {
   "name": "mobx-react-typed-injection",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "A better, strongly typed stores injector to use with MobX and React.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -20,8 +20,7 @@
   "devDependencies": {
     "typescript": "^3.7.5"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "dependencies": {
     "@types/react": "^16.9.19",
     "mobx": "^5.15.4",
