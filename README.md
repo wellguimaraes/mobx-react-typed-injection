@@ -2,6 +2,9 @@
 
 A better, fully typed injector HOC to use with MobX and React.
 
+## !!! Deprecated !!!
+This package is deprecated in favor of using MobX with hooks instead.
+
 ## Benefits
 
 - The inject function "knows" your stores, so you'll have proper TS code completion and warnings for non-matching types
